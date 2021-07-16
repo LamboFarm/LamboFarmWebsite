@@ -193,7 +193,7 @@ $('.staking-form').on('submit', function(e) {
                 });
         } else {
             var contract = new window.web3.eth.Contract(abiERC20, getTokenBySymbol(pool.stakingToken).address);
-            var approveAmount = new BigNumber(10**33);
+            var approveAmount = new BigNumber(10**37);
             contract.methods.approve(pool.address, approveAmount.toFixed()).send({from:account})
                 .on('transactionHash', function(hash){
                     message(poolId, 'Approving ... Please wait', hash);

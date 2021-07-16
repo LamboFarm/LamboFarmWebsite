@@ -69,7 +69,7 @@
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                         <li><a href="index.html">HOME</a></li>
-                        <li><a href="pools.html" class="active">POOLS</a></li>
+                        <li><a href="pools.html">POOLS</a></li>
                         <li><a href="vaults.html" class="active">VAULTS</a></li>
                         <li><a href="https://dex.kandyswap.com/#/swap?inputCurrency=KCS&outputCurrency=0x041a33502ba2ab0d73f400564cfaa696b2ac8b64" target="_blank"
                                class="btn-nav-line coming-soon"><span class="txt-hover">BUY $LAMBO</span><span class="txt-reg">BUY $LAMBO</span></a></li>
@@ -98,7 +98,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 align-self-center">
-                    <h1 class="flokiHeader" style="font-size: 64px;color: #fff;-webkit-text-stroke: 1px 384DFF;">$LAMBO Pools</h1>
+                    <h1 class="flokiHeader" style="font-size: 64px;color: #fff;-webkit-text-stroke: 1px 384DFF;">$LAMBO Vaults</h1>
                 </div>
                 <div class="offset-lg-1 col-lg-4 col-md-12 col-sm-12 col-xs-12 align-self-center">
                     <div class="apps">
@@ -116,38 +116,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div id="container--info">
-                    <div class="pool--container" data-pool="CLAIMALLFUNC">
-                        <div class="row">
-                            <div class="col-md-2 col-4">
-                                $LAMBO Price
-                                <br><strong class="display--lambo-price">-</strong>
-                            </div>
-                            <div class="col-md-2 col-4">
-                                TVL
-                                <br><strong class="display--total-tvl">-</strong>
-                            </div>
-                            <div class="col-md-2 col-4">
-                                Your Total Earnings
-                                <br><strong class="display--total-rewards">-</strong>
-                            </div>
-                            <div class="col-md-2">
-                                <a href="#" class="btn btn-outline-dark btn-block btn--claim-all">Claim All</a>
-                                <div class="messages"></div>
-                            </div>
-                            <div class="col-md-1">
-                            </div>
-                            <div class="col-md-3">
-                                Show
-                                <br>
-                                <input type="radio" name="pools_switch" value="0" id="pools_switch_0" checked /> <label for="pools_switch_0">All Pools</label>
-                                &nbsp;&nbsp;&nbsp;
-                                <input type="radio" name="pools_switch" value="1" id="pools_switch_1" /> <label for="pools_switch_1">My Pools</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="container--pools">
+                <div id="container--vaults">
                 </div>
             </div>
         </div>
@@ -303,9 +272,10 @@
 
 
 <script src="tools.js"></script>
-<script src="farm.js"></script>
+<script src="vault.js"></script>
 <script src="config.js"></script>
-<script src="config_init.js"></script>
+<!--<script src="config_init.js"></script>-->
+<script src="config_init_vaults.js"></script>
 
 
 <script type="text/javascript">
